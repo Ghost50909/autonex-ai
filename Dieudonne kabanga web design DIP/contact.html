@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - AutoNex AI</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-flex { display: flex; gap: 40px; align-items: flex-start; }
+        .form-container { flex: 1; background: var(--white); padding: 40px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
+        
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; font-weight: 600; margin-bottom: 8px; color: var(--dark-bg); }
+        .form-group input, .form-group textarea { width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-family: inherit; font-size: 1rem; }
+        .form-group textarea { height: 120px; resize: none; }
+        .submit-btn { background: var(--primary-color); color: var(--white); border: none; padding: 14px 30px; border-radius: 6px; font-size: 1rem; font-weight: 600; cursor: pointer; width: 100%; transition: background 0.2s; }
+        .submit-btn:hover { background: #0056b3; }
+        
+        /* Right sidebar container */
+        .sidebar-container { flex: 1; display: flex; flex-direction: column; gap: 20px; }
+        
+        .maintenance-box { background: #1e293b; color: var(--white); padding: 30px; border-radius: 8px; }
+        .m-item { border-bottom: 1px solid #334155; padding: 15px 0; }
+        .m-item:last-child { border-bottom: none; }
+        .m-item h4 { color: var(--primary-color); font-size: 1.1rem; }
+        
+        /* New Direct Reach Out Fast Box */
+        .direct-reach-box { background: var(--white); border: 1px solid #e2e8f0; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
+        .direct-reach-box h3 { color: var(--dark-bg); margin-bottom: 15px; font-size: 1.3rem; }
+        
+        .contact-method-link { display: flex; align-items: center; gap: 15px; background: #f8fafc; border: 1px solid #e2e8f0; padding: 15px; border-radius: 6px; text-decoration: none; color: var(--text-dark); font-weight: 600; margin-bottom: 12px; transition: all 0.2s ease; }
+        .contact-method-link:last-child { margin-bottom: 0; }
+        .contact-method-link:hover { background: #f1f5f9; border-color: var(--primary-color); transform: translateY(-2px); }
+        
+        /* Badges for visual flair */
+        .whatsapp-badge { color: #22c55e; font-size: 1.2rem; font-weight: bold; }
+        .email-badge { color: #007bff; font-size: 1.2rem; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo">AutoNex<span>AI</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        
+      <div class="form-container">
+                <form action="https://formspree.io/f/xqejgakl" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your business or automation needs..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Request</button>
+                </form>
+            </div>
+
+            <div class="sidebar-container">
+                
+                <div class="maintenance-box">
+                    <h3>Ongoing Support Plans</h3>
+                    <div class="m-item">
+                        <h4>Basic Support — $20–$50/mo</h4>
+                        <p style="color: #cbd5e1; font-size: 0.9rem;">Minor system updates & stability monitoring</p>
+                    </div>
+                    <div class="m-item">
+                        <h4>Growth Support — $60–$150/mo</h4>
+                        <p style="color: #cbd5e1; font-size: 0.9rem;">System optimization + analytical updates</p>
+                    </div>
+                    <div class="m-item">
+                        <h4>Premium Support — $200+/mo</h4>
+                        <p style="color: #cbd5e1; font-size: 0.9rem;">Full continuous upgrades & support</p>
+                    </div>
+                </div>
+
+                <div class="direct-reach-box">
+                    <h3>Reach Out Faster</h3>
+                    <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 20px;">Skip the form queue and connect directly with our automation team instantly:</p>
+                    
+                    <a href="https://wa.me/+256726962422?text=Hi%20AutoNex%20AI,%20I'm%20interested%20in%20an%20automation%20bot!" target="_blank" class="contact-method-link">
+                        <span class="whatsapp-badge">💬</span>
+                        <div>
+                            <div style="font-size: 0.95rem;">Chat on WhatsApp</div>
+                            <div style="font-size: 0.8rem; color: var(--text-light); font-weight: normal;">Instant Response</div>
+                        </div>
+                    </a>
+
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=donkab99@gmail.com&su=AutoNex%20AI%20Automation%20Inquiry" target="_blank" class="contact-method-link">
+    <span class="email-badge">✉</span>
+    <div>
+        <div style="font-size: 0.95rem;">Send an Email</div>
+        <div style="font-size: 0.8rem; color: var(--text-light); font-weight: normal;">Replies within 2 hours</div>
+    </div>
+</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="contact.html">Contact</a>
+        </div>
+        <p>&copy; 2026 AutoNex AI. All Rights Reserved.</p>
+        <div class="slogan">“Automate Smarter. Grow Faster.”</div>
+    </footer>
+
+</body>
+</html>
