@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - AutoNex AI</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        /* Base Container Settings */
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+        /* Content Styling */
+        .about-hero { text-align: center; padding: 60px 20px; background: #f8fafc; border-radius: 8px; margin-bottom: 40px; }
+        .about-hero h1 { font-size: 2.5rem; color: #0f172a; margin-bottom: 15px; }
+        .about-hero p { font-size: 1.1rem; color: #475569; max-width: 700px; margin: 0 auto; }
+
+        /* Services & Products Grid (Flexbox layout) */
+        .services-section { margin: 60px 0; }
+        .services-title { text-align: center; font-size: 2rem; color: #0f172a; margin-bottom: 40px; font-weight: 700; }
+        
+        .products-grid { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; }
+        
+        .product-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 35px 30px; width: 340px; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05); transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: space-between; }
+        .product-card:hover { transform: translateY(-5px); border-color: #007bff; box-shadow: 0 20px 25px -5px rgba(0, 123, 255, 0.1); }
+        
+        /* Formal Visual Container */
+        .icon-container { background: #f0f7ff; color: #007bff; width: 55px; height: 55px; display: flex; align-items: center; justify-content: center; border-radius: 10px; margin-bottom: 20px; }
+        
+        .product-card h3 { font-size: 1.3rem; color: #0f172a; margin-bottom: 12px; font-weight: 700; }
+        .product-card p { color: #64748b; font-size: 0.95rem; line-height: 1.6; margin-bottom: 25px; }
+        
+        /* Pricing & Action */
+        .price-tag { font-size: 1.6rem; font-weight: 700; color: #0f172a; margin-bottom: 20px; display: flex; align-items: baseline; gap: 5px; }
+        .price-tag span { font-size: 0.85rem; color: #64748b; font-weight: 400; }
+        
+        .buy-btn { display: inline-block; text-align: center; background: #007bff; color: #ffffff; text-decoration: none; padding: 12px; border-radius: 6px; font-weight: 600; font-size: 0.9rem; transition: background 0.2s; }
+        .buy-btn:hover { background: #0056b3; }
+
+        /* SOLE CREATOR SECTION STYLING */
+        .creator-section { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 45px; margin: 60px 0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.01); }
+        .creator-container { display: flex; align-items: center; gap: 40px; }
+        
+        /* Circular Avatar Placeholder */
+        .creator-avatar { width: 130px; height: 130px; background: #e2e8f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #475569; font-size: 2.5rem; font-weight: bold; flex-shrink: 0; border: 3px solid #007bff; }
+        
+        .creator-info h2 { font-size: 1.8rem; color: #0f172a; margin-bottom: 5px; font-weight: 700; }
+        .creator-subtitle { font-size: 1rem; color: #007bff; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; }
+        .creator-bio { color: #475569; font-size: 1.05rem; line-height: 1.7; }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .products-grid { flex-direction: column; align-items: center; }
+            .product-card { width: 100%; max-width: 400px; }
+            .creator-container { flex-direction: column; text-align: center; gap: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo">AutoNex<span>AI</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <section class="about-hero">
+            <h1>Our Mission</h1>
+            <p>AutoNex AI is a forward-thinking digital agency specializing in intelligent workflow scaling. We build state-of-the-art AI infrastructure designed to eliminate manual tasks and accelerate corporate growth metrics.</p>
+        </section>
+
+        <section class="services-section">
+            <h2 class="services-title">Services & Products Sold</h2>
+            
+            <div class="products-grid">
+                
+                <div class="product-card">
+                    <div>
+                        <div class="icon-container">
+                            <i data-lucide="message-square" style="width: 28px; height: 28px;"></i>
+                        </div>
+                        <h3>Nexus CRM Support Bot</h3>
+                        <p>An intelligent 24/7 client conversational agent. Integrates directly into WhatsApp and Telegram to answer customer inquiries, handle tracking, and organize intake pipelines instantly.</p>
+                    </div>
+                    <div>
+                        <div class="price-tag">$299 <span>/ setup fee</span></div>
+                        <a href="contact.html" class="buy-btn">Deploy Infrastructure</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div>
+                        <div class="icon-container">
+                            <i data-lucide="zap" style="width: 28px; height: 28px;"></i>
+                        </div>
+                        <h3>AutoLead Sales Agent</h3>
+                        <p>High-precision conversational sales closer. Scans multi-channel traffic to identify high-intent prospects, captures vital data fields, qualifies leads, and logs them directly to spreadsheets.</p>
+                    </div>
+                    <div>
+                        <div class="price-tag">$450 <span>/ setup fee</span></div>
+                        <a href="contact.html" class="buy-btn">Deploy Infrastructure</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div>
+                        <div class="icon-container">
+                            <i data-lucide="cpu" style="width: 28px; height: 28px;"></i>
+                        </div>
+                        <h3>OmniSync Workflow Agent</h3>
+                        <p>Complete background database synchronization ecosystem. Bridges messaging APIs, webhooks, tracking systems, and digital storefront layouts to keep back-end systems perfectly aligned.</p>
+                    </div>
+                    <div>
+                        <div class="price-tag">$599 <span>/ setup fee</span></div>
+                        <a href="contact.html" class="buy-btn">Deploy Infrastructure</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="creator-section">
+            <div class="creator-container">
+                <div class="creator-avatar">DK</div>
+                <div class="creator-info">
+                    <h2>Dieudonné Ntambwa Kabanga</h2>
+                    <div class="creator-subtitle">Sole Founder & Lead Architect</div>
+                    <p class="creator-bio">
+                        Every line of code, structural architecture layer, and system copy layout across the AutoNex AI platform was engineered completely from the ground up by a single person. As the sole developer and technical writer, I designed this ecosystem to prove that high-performance automation assets can be planned, styled, and fully deployed through individual technical execution.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="contact.html">Contact</a>
+        </div>
+        <p>&copy; 2026 AutoNex AI. All Rights Reserved.</p>
+        <div class="slogan">“Automate Smarter. Grow Faster.”</div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
