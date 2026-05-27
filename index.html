@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoNex AI - Automate Smarter. Grow Faster.</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Hero Specific Style */
+        .hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: var(--white);
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 20px; }
+        .hero p { font-size: 1.25rem; max-width: 700px; margin: 0 auto 30px auto; color: #94a3b8; }
+        
+        /* Flexbox Package Grid */
+        .pricing-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        .price-card {
+            background: var(--white);
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 30px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+        .price-card.featured { border: 2px solid var(--primary-color); }
+        .price-card h3 { font-size: 1.4rem; margin-bottom: 10px; }
+        .price-card .price { font-size: 1.8rem; font-weight: bold; color: var(--primary-color); margin: 15px 0; }
+        .price-card ul { list-style: none; margin-bottom: 25px; flex-grow: 1; }
+        .price-card ul li { margin-bottom: 8px; font-size: 0.95rem; color: #475569; }
+        .price-card ul li::before { content: "✓ "; color: #22c55e; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo">AutoNex<span>AI</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Intelligent AI Systems For Your Business</h1>
+            <p>We build intelligent AI automation systems that help businesses save time, automate customer support, increase sales, and scale faster.</p>
+            <a href="contact.html" class="btn">Get Started Now</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">AI Bot Packages & Pricing</h2>
+        <div class="pricing-grid">
+            
+            <div class="price-card">
+                <h3>Starter Bot Package</h3>
+                <p style="font-size: 0.85rem; color: #64748b;">Small shops, Freelancers, Personal brands</p>
+                <div class="price">$50 – $150</div>
+                <ul>
+                    <li>Basic AI chatbot</li>
+                    <li>Auto replies for FAQs</li>
+                    <li>WhatsApp or Instagram integration</li>
+                    <li>24/7 responses</li>
+                    <li>Up to 1 platform integration</li>
+                </ul>
+                <a href="contact.html" class="btn">Choose Starter</a>
+            </div>
+
+            <div class="price-card featured">
+                <h3>Growth Business Bot</h3>
+                <p style="font-size: 0.85rem; color: #64748b;">Restaurants, Salons, Gyms, Online stores</p>
+                <div class="price">$200 – $500</div>
+                <ul>
+                    <li>Everything in Starter</li>
+                    <li>Smart AI conversations</li>
+                    <li>Appointment booking automation</li>
+                    <li>CRM & Email integration</li>
+                    <li>AI lead qualification</li>
+                </ul>
+                <a href="contact.html" class="btn">Choose Growth</a>
+            </div>
+
+            <div class="price-card">
+                <h3>Advanced AI Agent</h3>
+                <p style="font-size: 0.85rem; color: #64748b;">Agencies, Large businesses, Support teams</p>
+                <div class="price">$700 – $2,000+</div>
+                <ul>
+                    <li>Fully customized AI agent</li>
+                    <li>Multi-platform automation & Voice AI</li>
+                    <li>Automated customer onboarding</li>
+                    <li>Staff workflow automation</li>
+                    <li>API & Custom Team dashboard</li>
+                </ul>
+                <a href="contact.html" class="btn">Contact Sales</a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="contact.html">Contact</a>
+        </div>
+        <p>&copy; 2026 AutoNex AI. All Rights Reserved.</p>
+        <div class="slogan">“Automate Smarter. Grow Faster.”</div>
+    </footer>
+
+</body>
+</html>
